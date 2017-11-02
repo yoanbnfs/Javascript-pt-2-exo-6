@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 6</title>
+  </head>
+  <body>
+    <div class="conteneur">
+      <img src="assets/img/image1.jpg" id="image1" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"/>
+      <img src="assets/img/image2.jpg" id="image2" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"/>
+      <img src="assets/img/image3.jpg" id="image3" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"/>
+      <img src="assets/img/image4.jpg" id="image4" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"/>
+      <img src="assets/img/image5.jpg" id="image5" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"/>
+    </div>
+    <script type="text/javascript">
+    function mouseIn(image) {
+      image.src='assets/img/'+image.id+'_2.jpg';
+    }
+    function mouseOut(image) {
+      image.src='assets/img/'+image.id+'.jpg';
+    }
+    </script>
+  </body>
+</html>
